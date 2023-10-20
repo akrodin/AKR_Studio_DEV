@@ -22,7 +22,7 @@ node {
             encoded="$(cat encodedData.txt)"
             
             file_name_without_extension=${base_name%.*}        
-            script_path='AKR_CI_CD\\\\'"${file_name_without_extension}"                        
+            script_path='CI_CD\\\\'"${file_name_without_extension}"                        
             
             payload='{"scriptPath": "'$script_path'","body":"'$encoded'"}'
                        
@@ -39,3 +39,4 @@ node {
       '''
    }   
 }
+
